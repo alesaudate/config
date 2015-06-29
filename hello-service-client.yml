@@ -6,4 +6,4 @@ eureka:
    defaultZone: http://localhost:8761/eureka/
 hello-service-client:
  ribbon:
-  listOfServers: http://localhost:8989
+  listOfServers: HELLO-SERVICE
