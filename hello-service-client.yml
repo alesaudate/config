@@ -1,9 +1,2 @@
 server:
- port: 8089
-eureka:
- client:
-  serviceUrl:
-   defaultZone: http://localhost:8761/eureka/
-hello-service-client:
- ribbon:
-  listOfServers: HELLO-SERVICE
+ port: 8989
