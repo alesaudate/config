@@ -1,4 +1,4 @@
-message: "O yes change!"
+message: "Another change"
 server:
  port: 0
 eureka:
