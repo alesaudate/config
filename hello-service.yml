@@ -1,4 +1,4 @@
-message: "Change!"
+message: "Olá."
 server:
  port: 0
 eureka:
