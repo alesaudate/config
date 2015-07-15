@@ -1,4 +1,4 @@
-message: "Mensagem antiga."
+message: "Olá Luis."
 server:
  port: 0
 eureka:
