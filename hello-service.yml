@@ -1,4 +1,4 @@
-ola: "Mensagem"
+message: "Mensagem"
 spring:
   application:
    name: hello-service
