@@ -4,5 +4,8 @@ spring:
 
 eureka:
   instance:
-    hostname: http://7ZlPXXnf22no:xucmM4hozVEG@eureka-c8b50f49-802b-426b-ab52-c54c3a39799a.south.fe.pivotal.io
+    hostname: ${vcap.application.uris[1]}
     nonSecurePort: 80
+  client:		
+    serviceUrl:		
+      defaultZone: ${vcap.application.uris[1]}
