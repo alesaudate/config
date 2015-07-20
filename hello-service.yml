@@ -1,7 +1,6 @@
 spring:
   application:
     name: ${vcap.application.name}
-
 eureka:
   client:
     serviceUrl:
