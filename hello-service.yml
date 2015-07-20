@@ -4,4 +4,4 @@ server:
 eureka:
  client:
   serviceUrl:
-   defaultZone: http://localhost:8761/eureka/
+   defaultZone: http://spring-cloud-broker.south.fe.pivotal.io/dashboard/p-service-registry/940f0fb9-8c56-49b1-9b0c-a396edf17561
