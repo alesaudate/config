@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ${vcap.application.name}
+   name: ${vcap.application.name}
 
 eureka:
   instance:
