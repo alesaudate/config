@@ -1,7 +1,8 @@
 spring:
   application:
     name: ${vcap.application.name}
+
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://7ZlPXXnf22no:xucmM4hozVEG@eureka-c8b50f49-802b-426b-ab52-c54c3a39799a.south.fe.pivotal.io
+  instance:
+    hostname: ${vcap.application.uris[1]}
+    nonSecurePort: 80
