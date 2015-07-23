@@ -7,4 +7,4 @@ eureka:
     hostname: http://eureka-server-net.cfapps.io/eureka/
     nonSecurePort: 80
     metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
