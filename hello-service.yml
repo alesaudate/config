@@ -1,13 +1,9 @@
-message: "Victor!"
+message: "Olá!"
 spring:
   application:
    name: hello-service
 eureka:
-  client:
-    serviceUrl:
-    defaultZone: http://eureka-server-net.cfapps.io/
   instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
+    leaseRenewalIntervalInSeconds: 10
     metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
