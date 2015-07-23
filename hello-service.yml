@@ -3,6 +3,9 @@ spring:
   application:
    name: hello-service
 eureka:
+  client:
+    serviceUrl:
+    defaultZone: http://eureka-server-net.cfapps.io/
   instance:
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
