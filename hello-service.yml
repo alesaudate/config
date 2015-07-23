@@ -3,10 +3,8 @@ spring:
   application:
    name: hello-service
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka-server-net.cfapps.io/eureka/
   instance:
-    leaseRenewalIntervalInSeconds: 10
+    hostname: http://eureka-server-net.cfapps.io/eureka/
+    nonSecurePort: 80
     metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
