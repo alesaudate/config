@@ -1,4 +1,4 @@
-message: "Hola TDC 2015!"
+message: "Olá mundo!"
 spring:
   application:
    name: hello-service
