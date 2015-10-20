@@ -2,14 +2,6 @@ message: "Olá mundo!"
 spring:
   application:
    name: hello-service
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
-  client:
-    serviceUrl:
-      defaultZone: http://eureka-server-demo.cfapps.io/eureka/
 spring:
   profiles: cloud
 eureka:
