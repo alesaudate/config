@@ -2,8 +2,9 @@ spring:
   profiles: cloud
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
   client:
     registerWithEureka: false
     fetchRegistry: false
