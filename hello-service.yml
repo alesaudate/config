@@ -4,7 +4,9 @@ spring:
    name: hello-service
 eureka:
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
   client:
     serviceUrl:
       defaultZone: http://eureka-server-demo.cfapps.io/eureka/
