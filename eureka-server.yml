@@ -2,5 +2,5 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://eureka-server-demo.cfapps.io/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
