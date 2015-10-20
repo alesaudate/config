@@ -2,8 +2,6 @@ message: "Olá mundo!"
 spring:
   application:
    name: hello-service
-spring:
-  profiles: cloud
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
