@@ -3,7 +3,8 @@ spring:
    name: hello-service-client
 eureka:
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
   client:
     serviceUrl:
       defaultZone: http://eureka-server-demo.cfapps.io/eureka/
