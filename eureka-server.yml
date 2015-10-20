@@ -1,7 +1,5 @@
 eureka:
   instance:
-    metadataMap:
-      instanceId: ${instance.guid}:${spring.application.name}:${server.port:8080}
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
   client:
