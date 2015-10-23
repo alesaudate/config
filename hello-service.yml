@@ -1,13 +1,12 @@
 message: "Olá mundo!"
 spring:
+  profiles: cloud
   application:
    name: hello-service
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri}
+      defaultZone: ${vcap.services.eureka-service.credentials.uri}/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
   instance:
