@@ -1,4 +1,4 @@
-message: "Olá Mundo!"
+message: "Olá!"
 spring:
   profiles: cloud
   application:
